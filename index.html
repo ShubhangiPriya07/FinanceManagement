@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Financify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Financify</h1>
+        <p><span style="color: rgb(47, 168, 254);">Understand</span> • <span
+                style="color:rgb(255, 68, 68);">Track</span> • <span style="color:rgb(41, 231, 41);">Control your
+                money</span></p>
+    </header>
+
+    <!-- DASHBOARD -->
+    <section class="dashboard">
+        <div class="card">
+            <h3>Total Income</h3>
+            <p id="totalIncome">₹0</p>
+        </div>
+        <div class="card">
+            <h3>Total Expense</h3>
+            <p id="totalExpense">₹0</p>
+        </div>
+        <div class="card">
+            <h3>Balance</h3>
+            <p id="balance">₹0</p>
+        </div>
+    </section>
+    <div class="line"></div>
+
+    <!-- ADD TRANSACTION -->
+    <section class="forms">
+        <form id="incomeForm">
+            <h3 style="margin-top: 2rem;">Add Income</h3>
+            <input type="text" id="incomeSource" placeholder="Source" required>
+            <input type="number" id="incomeAmount" placeholder="Amount" required>
+            <button>Add Income</button>
+        </form>
+
+        <form id="expenseForm">
+            <h3 style="margin-top: 1.5rem;">Add Expense</h3>
+            <input type="text" id="expenseName" placeholder="Expense Name" required>
+            <input type="number" id="expenseAmount" placeholder="Amount" required>
+            <select id="expenseCategory">
+                <option>Food</option>
+                <option>Rent</option>
+                <option>Travel</option>
+                <option>Education</option>
+                <option>Entertainment</option>
+                <option>Others</option>
+            </select>
+            <button>Add Expense</button>
+        </form>
+    </section>
+
+    <!-- CATEGORY ANALYSIS -->
+    <div class="line"></div>
+    <div class="analyze">
+        <!-- TRANSACTION HISTORY -->
+        <section class="history">
+            <h2>Transaction History</h2>
+            <ul id="transactionList"></ul>
+        </section>
+        <section class="analysis">
+            <h2>Expense Breakdown</h2>
+            <ul id="categoryList"></ul>
+        </section>
+    </div>
+    <section class="reset-section">
+        <button id="resetBtn">Reset All Data</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
