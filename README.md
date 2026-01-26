@@ -38,6 +38,19 @@ balance, helping users make informed financial decisions.
 
 ---
 
+## Steps to Run the Project
+1. Download or clone the project files.
+2. Ensure the following files are in the same folder:
+   - `index.html`
+   - `style.css`
+   - `script.js`
+3. Open `index.html` in any modern web browser (Chrome, Edge, Firefox).
+4. Start adding income and expenses to use the application.
+
+No additional setup or installation is required.
+
+---
+
 ## Known Limitations
 - No user authentication or multiple user support
 - No data visualization charts (only text-based analysis)
